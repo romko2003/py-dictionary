@@ -9,7 +9,8 @@ class Node:
 
 
 class Dictionary:
-    def __init__(self, initial_capacity: int = 8, load_factor: float = 2 / 3) -> None:
+    def __init__(self, initial_capacity: int = 8,
+                 load_factor: float = 2 / 3) -> None:
         self.capacity: int = initial_capacity
         self.load_factor: float = load_factor
         self.threshold: int = int(self.capacity * self.load_factor)
